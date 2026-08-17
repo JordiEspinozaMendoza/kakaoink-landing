@@ -680,32 +680,6 @@ export default function MenuServicePage() {
           </div>
         </section>
       </main>
-
-      <footer>
-        <div className="wrap">
-          <Link className="mark" href="/">
-            kakao<span>.</span>ink
-          </Link>
-          <div>
-            <Link className="f" href="/menu">
-              Digital menus
-            </Link>
-            <Link className="f" href="/websites">
-              Websites
-            </Link>
-            <Link className="f" href="/ads">
-              Social ads
-            </Link>
-            <Link className="f" href="/">
-              Studio
-            </Link>
-          </div>
-          <small>
-            Design studio · Tijuana, MX ·{" "}
-            <a href="mailto:hello@kakao.ink"> hello@kakao.ink </a>
-          </small>
-        </div>
-      </footer>
     </>
   );
 }

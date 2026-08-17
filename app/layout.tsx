@@ -72,20 +72,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <footer>
           <div className="wrap">
-            <a className="mark" href="index.html">
+            <a className="mark" href="/">
               kakao<span>.</span>ink
             </a>
             <div>
-              <a className="f" href="menu.html">
+              <a className="f" href="/menu">
                 Digital menus
               </a>
-              <a className="f" href="websites.html">
+              <a className="f" href="/websites">
                 Websites
               </a>
-              <a className="f" href="ads.html">
+              <a className="f" href="/ads">
                 Social ads
               </a>
-              <a className="f" href="index.html">
+              <a className="f" href="/">
                 Studio
               </a>
             </div>
