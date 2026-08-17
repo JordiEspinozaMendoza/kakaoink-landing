@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
 import { Nav } from "./Nav";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,13 @@ export const metadata: Metadata = {
     siteName: "kakao.ink",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/thumbnail.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -72,22 +80,22 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
         <footer>
           <div className="wrap">
-            <a className="mark" href="/">
+            <Link className="mark" href="/">
               kakao<span>.</span>ink
-            </a>
+            </Link>
             <div>
-              <a className="f" href="/menu">
+              <Link className="f" href="/menu">
                 Digital menus
-              </a>
-              <a className="f" href="/websites">
+              </Link>
+              <Link className="f" href="/websites">
                 Websites
-              </a>
-              <a className="f" href="/ads">
+              </Link>
+              <Link className="f" href="/ads">
                 Social ads
-              </a>
-              <a className="f" href="/">
+              </Link>
+              <Link className="f" href="/">
                 Studio
-              </a>
+              </Link>
             </div>
             <small>
               Design studio · Tijuana, MX ·
