@@ -93,6 +93,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Link className="f" href="/ads">
                 Social ads
               </Link>
+              <Link className="f" href="/work">
+                Work
+              </Link>
               <Link className="f" href="/">
                 Studio
               </Link>

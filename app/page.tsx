@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { HomeWork } from "@/app/work/views";
 
 export const metadata: Metadata = {
   title: "kakao.ink — Design studio for shops, cafés & restaurants",
@@ -320,6 +321,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <HomeWork locale="en" />
 
       <section className="cta" id="contact">
         <div className="wrap">

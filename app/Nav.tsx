@@ -7,6 +7,7 @@ const navItems = [
   { href: '/menu', label: 'Digital menus' },
   { href: '/websites', label: 'Websites' },
   { href: '/ads', label: 'Social ads' },
+  { href: '/work', label: 'Work' },
 ];
 
 export function Nav() {
