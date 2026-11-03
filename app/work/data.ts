@@ -88,7 +88,7 @@ export const caseStudies: CaseStudy[] = [
     location: "Tijuana, Baja California",
     services: ["websites"],
     year: 2026,
-    url: "https://shelly-jet.vercel.app",
+    url: "https://www.comercializadorashelly.com",
     cover: shHome,
     desktop: [shHome, shProducts, shEngine],
     mobile: [shMobile],
