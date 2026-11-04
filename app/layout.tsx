@@ -3,7 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
 import { Nav } from "./Nav";
-import Link from "next/link";
+import { CookieNotice } from "./CookieNotice";
+import { Footer } from "./Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,34 +79,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Nav />
         {children}
 
-        <footer>
-          <div className="wrap">
-            <Link className="mark" href="/">
-              kakao<span>.</span>ink
-            </Link>
-            <div>
-              <Link className="f" href="/menu">
-                Digital menus
-              </Link>
-              <Link className="f" href="/websites">
-                Websites
-              </Link>
-              <Link className="f" href="/ads">
-                Social ads
-              </Link>
-              <Link className="f" href="/work">
-                Work
-              </Link>
-              <Link className="f" href="/">
-                Studio
-              </Link>
-            </div>
-            <small>
-              Design studio · Tijuana, MX ·
-              <a href="mailto:hello@kakao.ink"> hello@kakao.ink </a>
-            </small>
-          </div>
-        </footer>
+        <Footer />
+        <CookieNotice />
         <Analytics />
       </body>
     </html>
